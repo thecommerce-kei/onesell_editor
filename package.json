@@ -1,0 +1,37 @@
+{
+  "name": "onesell-suneditor",
+  "version": "1.0.0",
+  "description": "onesell-suneditor",
+  "main": "dist/suneditor.min.js",
+  "keywords": [],
+  "dependencies": {},
+  "deprecated": false,
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecommerce-kei/onesell_editor.git"
+  },
+  "homepage": "https://github.com/thecommerce-kei/onesell_editor",
+  "bugs": {
+    "email": "kei@thecommerce.co.kr",
+    "url": "https://github.com/thecommerce-kei/onesell_editor/issues"
+  },
+
+  "author": "kei@thecommerce.co.kr",
+  "license": "MIT",
+
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
+    "lint": "jshint src",
+    "test": "karma start"
+  },
+  "sideEffects": [
+    "./src/assets/css/*.css"
+  ]
+}
